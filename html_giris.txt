@@ -1,0 +1,2233 @@
+					HTML
+(Hyper Text Markup Language)
+
+Komutları metin, resim, ses, video gibi içeriklerin sayfadaki yerleşiminin
+ziyaretçiye gösterilmesini sağlar. 
+Sayfanın bir yerinden başka bir yerine ya da başka bir sayfaya link ve ya bağlantı verebiliyoruz.
+
+
+
+	HTML Komutları
+
+HTML tag ya da etiket denen komutlardan oluşur. Bu komutlar b ir araya gelerek
+web ya da HTML sayasını oluşturur.
+Eğer bir web sayfasına sağ tıklayıp "kaynağı görüntüle" tuşuna basarsanız HTML kodlarını
+görebilirsiniz.
+
+
+
+	HTML Sayfası
+
+HTML sayfa uzantısı .htm ve ya .html olacaktır.
+Dosyada herhangi bir html kodu olmasa bile .html formatında kaydedildiğinde
+html sayfası olacaktır.
+Oluşturulan web sayfasına çift tıkladığınızda varsayılan tarayıcı ile bilgisayar tarafından çalıştırılır.
+
+
+
+	HTML Editörleri
+
+Visual Studio
+VS Code
+Dreamwear
+Notepad++
+Atom
+Sublime
+Netbeans
+Brackets
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	TARAYICI (BROWSER)
+
+Tarayıcılar sayfa içeriğini HTML kodlarına göre işleyip düzenleyerek
+(render) kullanıcıya gösteren yazılımlardır.
+
+
+	AĞ (WEB)
+
+Herhangi bir evde veya işyerinde birbirine bağlanan bilgisayarlar bir ağ oluşturur.
+Bu tür ağlara yerel ağ (LAN) denir. 
+Yerel ağlar birbirine bağlanarak geniş ağlar (WAN), geniş ağlar da birbirine
+bağlanarak dünya çağında bir ağ olan World Wide Web'i (WWW) oluştururlar.
+
+
+	WEB SUNUCU
+
+HTML sayfalarını başka kişilerin de ziyaret etmesini istiyorsanız bu
+sayfaları Web Sunucu denilen bilgisayarlara koymalısınız.
+
+
+	HOSTING (SİTE BARINDIRMA)
+
+Sitenizi internette yayınlamak için kiralanan sunucu disk alanlarına hosting denir.
+Yaptığınız sitenin boyutuna göre 10MB gibi bir alan veya sunucunun
+tamamını kiralayabilirsiniz. 
+
+
+	ALAN ADI (DOMAIN)
+
+Alan adları sitenizin adını, türünü (net,org,com) ve ülke kodunu belirtir.
+Herhangi bir alan adı satın almak için yurt içi veya yurt dışındaki
+şirketleri tercih edebilirsiniz. 
+
+Ticari Kurum -> xxx -> com -> tr
+Kamu kurumu, dernek, vakıf -> yyy -> org
+İnternet servis sağlayıcısı -> zzz -> net
+
+
+
+The <!DOCTYPE html> declaration defines that this document is an HTML5 document
+The <html> element is the root element of an HTML page
+The <head> element contains meta information about the HTML page
+The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+The <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+The <h1> element defines a large heading
+The <p> element defines a paragraph
+Ayrıca <br> etiketinin bitiş komutu yoktur. <br> paragrafta bir alt satıra geçmeyi sağlar. 
+<!-- ... --> yorum satırıdır. 
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>PageTitle</title>
+	</head>
+	
+	<body>
+		<h1>Birinci Seviye Başlık</h1>
+		<h2>İkinci Seviye Başlık</h2>
+		<p>Paragraf</p>
+	</body>
+</html>
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+	HTML Komut Yapısı ve Özellikleri
+
+<p> komut içeriği </p>  ->  açılış tagi, içerik ve kapanış taginden oluşur.
+Her html komutunun kendine göre özellikleri vardır. Örneğin "id" özelliği etikete bir isim
+verilmesini ve onun diğer etiketlerden ayırt edilmesini sağlarken, "style" özelliği
+ise etiketin biçimini (rengini, boyutunu, komutunu) değiştirmeye yarar.
+
+
+	TEMEL HTML KOMUTLARI
+
+<!DOCTYPE html>   sayfanın html ile tasarlandığını belirtir.
+<html> </html>    sayfanın başlangıcını ve sonunu belirler.
+<head> </head>    sunucu ve arama motorları ile ilgili bilgileri içerir.
+<body> </body>    ziyaretçiye gösterilecek içeriği barındırır.
+<title> </title>  sayfa  ile ilgili açıklama barındırır. sayfa açıldığında tarayıcı sekmesinde görünür.
+<html lang="tr">  sayfanın dilini belirtir. html tagının bir özelliğidir, ayrı bir komut değildir.
+<meta charset="utf-8">  türkçe karakterlerin düzgün görünmesini sağlar, <head> tagı içinde yazılır.
+<hx> </hx>         içeriklerin başlık bilgisini barındırır. başlık tagleri büyükten küçüğe h1,h2,h3...
+<p> </p>           paragraf
+<br>              aynı paragrafın alt satırına geçmenizi sağlar.
+
+
+
+	SIKÇA KULLANILAN HTML ÖZELLİKLERİ
+
+Özellik		Değer			Örnek					Açıklama
+id		benzersiz isim		<h1 id="baslik1">...</h1>		Html tagına benzersiz bir isim verir
+class		css sınıf adı		<h2 class="cerceve">...</h2>		Html komutuna belirli bir ada sahip CSS kodu uygular.
+style		css komutu		<h1 style="color:red">...</h1>		Html komutu içinde CSS kodu yazılmasını sağlar.
+title		metin			<h1 title="MakaleBaşlığı">...</h1>	Html komutu üzerine gidince bir kutu içinde açıklama metni görünmesini sağlar.
+
+
+!!! title eklenilen yerde imleç ile üzerine gelindiğinde yazılan açıklama kutucuk içinde belirir.
+!!! style özelliği ile o alana yazılan yazının rengi değiştirilebilir.
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+				GENEL SAYFA YAPISI
+
+		SEO NEDİR?
+
+Search Engine Optimization (Arama Motoru Optimizasyonu)
+Bir web sitesinin arama performansını artırmaya yönelik yapılan çalışmaların tümüdür.
+Uygun ve kaliteli SEO ile siteniz arama sonuçlarında daha üst sıralarda görünebilir.
+Sitenizin üst sıralarda çıkması için Semantik & SEO amaçlı kodlama prensiplerine dikkat etmelisiniz. 
+
+
+		SEO VE TITLE ETİKETİ
+
+	Sayfa Başlığı (Title)
+
+Arama motorları sürekli dünya üzerindeki web sunucularını dolaşırlar ve bu sunucularda bulunan web sitelerindeki bilgileri veri tabanlarına kaydederler.
+Bu tür yazılımlara spider/örümcek denir.
+SEO açısından bilinmesi gereken en önemli konulardan biri sayfa başlığı ve <title> tagıdır.
+Eğer <title> içinde geçen kelimelerden biri aranırsa sizin sayfanız da arama sonuçlarında listelenebilir.
+Genelde en fazla 60 karakter uzunluğundadır.
+
+ <!DOCTYPE html>
+<html>
+    <head>
+        <!--satmak istediğim ürünle ilgili metin-->
+        <title>Sarı Lacivert Deri Futbol Topu</title>
+        
+    </head>
+    <body>
+
+    </body>
+</html>
+
+!!buradaki title kısmında yazan bilgi bize arama motoruna girilen bilgi sonucundaki eşleşme olasılığımızın yükselmesini sağlar.
+
+
+	Sayfa Açıklaması (Description)
+
+Arama motoları açısından önemli etiketlerden biri de <meta> etiketidir. 
+<meta> etiketin içine <title> etiketi ile ilişkili olarak yazılan açıklama sayfanızın daha üstte görünmesini sağlar.
+
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <!--satmak istediğim ürünle ilgili metin-->
+        <title>Sarı Lacivert Deri Futbol Topu</title>
+        <meta charset="utf-8">
+        <meta name="description" 
+        content="Türkiye'de üretilen sarı lacivert renkli futbol topu deri yüzeyi ve kalitesi sayesinde mükemmel bir futbol deneyimi sunar.">
+    </head>
+    <body>
+    </body>
+</html>
+
+	Anahtar Kelimeler (Keywords)
+
+<meta> etiketi içinde keywords ile listelenen kelimeler arama sonuçlarında daha üstte görünür.
+Anahtar kelimelerde en fazla 60 karakter kullanılmalıdır.
+
+	Konu Başlıkları (hx)
+<h1> <h2> gibi konu başlıkları gazetelerdeki manşetler gibi işlev görür; sadece ziyaretçilerin dikkatini çekmekle kalmaz,
+aynı zamanda arama motorlarının da dikkatini çeker.
+Body bölümü müşteriye yöneliktir ve arama motorları buradaki bilgileri veri tabanlarına kaydederler.
+Aşadağıdaki kodun head kısmında meta satırlarında anahtar kelimelerle durumu zenginleştirdik.
+
+
+<!DOCTYPE html>
+    <head>
+        <!--satmak istediğim ürünle ilgili metin-->
+        <title>Sarı Lacivert Deri Futbol Topu</title>
+        <meta charset="utf-8">
+        <meta name="description" 
+        content="Türkiye'de üretilen sarı lacivert renkli futbol
+        topu deri yüzeyi ve kalitesi sayesinde mükemmel 
+        bir futbol deneyimi sunar.">
+        <meta name="keywords" content="sarı,lacivert,deri,futbol,top,yerli">
+    </head>
+    <body>
+        <h1>ABC Marka Sarı Lacivert Deri Futbol Topu</h1>
+    </body>
+</html>
+
+
+	Semantik (Anlamsal) Web Nedir?
+Kelimelerin anlamlarını inceleyen bilim dalına Semantik denir.
+Semantik web, diğer anlamı ile anlamsal ağ, uygun içerikleri uygun HTML komutlarının içine koymak anlamına gelir.
+Google veya Yandex gibi arama motorları semantik web sayesinde arama yapan kullanıcılara en uygun içeriği sunar.
+<form>, <table>, <head> ve <footer> gibi HTML komutları semantiktir çünkü komutun adından hem anlamını hem işlevini anlayabiliriz.
+<span> ve <div> gibi komutlar semantik değildir, arama motorlarınca daha zor anlaşılan içerikler sunarlar.
+
+Semantik olarak tasarlanan sayfa içerikleri arama sonuçlarında daha üstte görünürler.
+Bu nedenle genel sayfa yapısını tasarlarken aşağıdaki semantik web etiketleri ihmal edilmemeli ve içeriğe uygun olarak kullanılmalıdır:
+.article
+.section
+.header
+.nav
+.aside
+.footer
+
+	Genel Sayfa Düzeni:
+
+Çok farklı sayfa tasarımları olmasına rağmen klasik bir sayfanın genel yapısı çoğunlukla aşağıdaki gibidir.
+Bu tasarım ve etiketlerle arama motoruna sayfayla ilgili en doğru bilgi verilmiş olur.
+		
+		<header>
+		<nav>
+	<article>	<aside>
+		<footer>
+
+<article> : Yorum, haber, forum gönderisi, blok gönderisi, müzik veya video gibi içerikleri kapsar.
+<section> : Genelde benzer konuya sahip birden fazla <article> etiketini barındırır.
+<header> : Bir sayfanın, makalenin veya bölümün başlık bilgisini kapsar.
+<nav> : Sayfa içine veya sayfa dışına link vermek için oluşturulan menüleri kapsar.
+<aside> : Sayfaların sol ya da sağ kenarında bulunan menü vb. içerikleri barındıran bölümdür.
+<footer> : Herhangi bir sayfanın, makaleninin, bölümün veya menünün en altında bulunur ve genelde en yakın içeriğin iletişim ve telif bilgilerini barındırır.
+<figure> : Fotoğraf, şekil, illüstrasyon gibi içerikleri ve bu içeriklerle ilgili başlık bilgisini barındırır.
+	
+
+
+	Semantik Sayfa Düzeni (Layout)
+
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div id=container>
+            <header>
+                <!--Buraya başlık bilgileri gelir-->
+            </header>
+            <nav>
+                <!--Buraya ana menü gelir-->
+            </nav>
+            <section>
+                <article>
+                    <!--Buraya 1. içerik gelecek-->
+                </article>
+                <article>
+                    <!--Buraya 2. içerik gelecek-->
+                </article>
+            </section>
+            <aside>
+                <!--Buraya yan menü gelicek-->
+            </aside>
+            <footer>
+                <!--Buraya telif bilgileri gelir-->
+            </footer>
+        </div>
+    </body>
+</html>
+
+
+Not:
+Genel Sayfa Düzeni sadece HTML ile değil aynı zamanda CSS kodu kullanılarak yazılır.
+Bu nedenle, sayfa düzeni ile ilgili çok daha ayrıntılı işlemleri CSS konusunda öğreneceğiz. 
+
+
+
+	HEAD ETİKETİNİN ÖZETİ VE TEKRARI
+
+<head> etiketi <title>, <style>, <meta>, <link>, <script> ve <base> etiketleri için bir kapsayıcıdır; yani bu etiketler <head> içinde bulunmak zorundadır.
+<head> etiketinde arama motorlarına yönelik içerikler bulunur.
+ 
+<title>:
+tarayıcının başlık çubuğunda görünen metindir. 
+sayfayla ilgili önemli bazı bilgiler gösterir.
+bu bilgiler arama motoruna iletir.
+SEO açısından önemlidir.
+
+<style>:
+sayfa içi css kodları yazmamızı ve sayfayı html komutlarında biçimlendirmemizi sağlar.
+
+<link>:
+harici css kodlarını sayfaya bağlar ve sayfayı biçimlendirmemizi sağlar.
+
+<meta>:
+meta özelliklerini önceden gördük.
+karakter setlerini tanımlamada, arama motoru için anahtar kelime tanımlamada, web sayfasının açıklamasını tanımlamada vs kullanılır.
+örnek verelim:
+<meta charset="UTF-8"> (Define the character set used)
+<meta name="description" content="Free Web tutorials"> (Define keywords for search engines)
+<meta name="author" content="John Doe"> (Define the author of a page)
+<meta http-equiv="refresh" content="30"> (Refresh document every 30 seconds)
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> (Setting the viewport to make your website look good on all devices)
+! Bu yazdığım son meta özelliği sayfanın ziyaretçinin cihazına göre ölçeklenmesini sağlar.
+
+<script>:
+sayfa içerisine JavaScript kodları yazmamızı sağlar.
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+</script>
+
+<base>:
+bir sayfadaki tüm göreli URL'ler için temel URL'yi ve/veya hedefi belirtir
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+		METİN VE LİSTELEME İŞLEMLERİ
+
+	Paragraf Oluşturma <p>
+
+Arama motorlarının en sevdiği etiketlerden biridir ve semantiktir.
+Ziyaretçiye ihtiyacı olan bilgiyi verir.
+id özelliği kullanılarak benzersiz bir isim verilebilir ve bu isimle değişik CSS ya da  JavaScriğt komutları uygulanabilir.
+class özelliği kullanılarak da belli bir ada sahip daha önce yazılmış bir CSS komut-grubu uygulanabilir.
+style özelliği ile doğrudan CSS kodu yazılabilir.
+<br> etiketi le alt satıra geçilebilir.
+
+<p id="p2" class="p2class" style="color:blueviolet"> uvuorvırhgvırhrejvpew </p>
+
+
+
+	Metin Biçimlendirme
+
+Html4 ve önceki sürümlerde metin biçimlendirme Html komutları ile yapılıyorken, Html5 sürümünde CSS kodları kullanılır.
+bununla birlikte aşağıdaki etiketlerle temel biçimlendirme işlemleri yapılabilir:
+* <b> ve <strong> etiketi kalınlaştırır. <strong> etiketi semantiktir.
+* <i> ve <em> etiketi metni eğik hale getirir. <em> semantiktir. 
+* <u> etiketi metnin altına çizgi çeker.
+* <mark> etiketi metni vurgular, fosforlu kalemle çizilmiş gibi yapar.
+* <sub> ve <sup> etiketleri içeriği alt ve üst simge yapar.
+* <code> etiketi metinleri Courier fontu ile yazar.
+* <pre> etiketi kodları tarayıcıda yazıldığı gibi gösterir.
+* <q> kelimenin sağına ve soluna tırnak işareti koyar.
+
+	<p>Sarı Lacivert <strong>Deri</strong> Futbol Topu</p>
+        <p>Sarı Lacivert Deri <em>Topu</em> </p>
+	<p><mark>Sarı Lacivert</mark> Deri Futbol Topu</p>
+        <p>Sarı Lacivert Deri <sub>Futbol</sub> <sup>Topu</sup></p>
+	<p><code>Sarı</code> Lacivert Deri Futbol Topu</p>
+	<p><pre> Sarı
+            Lacivert
+                    Futbol
+                            Topu 
+        </pre></p>
+
+
+	Span Komutu
+
+Bazen belli bir etiket içinde olmayan metinlere CSS veya JavaScript komutu uygulamak isteriz.
+Bu durumda metin <span> etiketi içine alınır ve id veya class gibi özellikleri kullanılarak CSS kodu uygulanır.
+<p id="par2" class="bicim2" style="color:blue"> 
+	<span class="mor"> HTML4 </span> sürümünde paragrafların fontunu, boyutunu, rengin, HTML komutları değiştirir.
+</p>
+
+
+
+
+		LİSTE İŞLEMLERİ
+
+HTML sayfalarında liste oluşturmak için <ol> ve <ul> tagları kullanılır.
+<ol> tagı "ordered list" kelimelerinin kısaltılmışıdır ve numaralı liste oluşturmak için kullanılır.
+<ul> tagı "unordered list" kelimelerinin kısaltılmışıdır ve madde imli liste oluşturmak için kullanılır.
+Listedeki her bir elemanı göstermek için <li> tagı kullanılmaktadır.
+
+<h1>Alışveriş Listesi</h1>
+        <ol>
+            <li>Elma</li>
+            <li>Armut</li>
+            <li>Portakal</li>
+        </ol>
+
+Bunun çıktısı:
+1.Elma
+2.Armut
+3.Portakal
+
+<h1>Alışveriş Listesi</h1>
+        <ul>
+            <li>Elma</li>
+            <li>Armut</li>
+            <li>Portakal</li>
+        </ul>
+
+Bunun çıktısı:
+* Elma
+* Armut
+* Portakal
+
+Listenin 1'den değil örneğin 3'ten başlamasını istiyorsanız <ol start="3"> şeklinde yazmalısınız.
+Listenizin artan değil de azalan olmasını istiyorsanız <ol reversed="reversed"> şeklinde yazmalısınız.
+Eğer rakam yerine harf veya Roma rakamlarının kullanılmasını istiyorsanız type özelliğine A,a,I veya i değerlerini verebilirsiniz.
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+		RESİM İŞLEMLERİ
+
+Kullanılacak resimler uygun bir klasöre konulmalıdır.
+En son site yayınlanacağı zaman bu klasör sunucuya gönderilmelidir aksi takdirde resimler görünmez.
+
+
+	Resimlerin Sayfaya Yerleştirilmesi
+
+Sayfanızda veya sitenizde kullanmak istediğiniz resimleri öncelikle uygun bir klasöre koyun.
+Bir resmin web sayfasına eklenmesi için <img> tagı kullanılır.
+Siteniz bittikten sonra resimleri de sunucuya göndermeyi unutmayın.
+Resimlerin telif hakkına dikkat edilmelidir.
+ 	
+	<h1>Türkiye Haritası:</h1>
+        <img src="resimler\harita.png">
+        <h1>Türk Bayrağı:</h1>
+        <img src="resimler\bayrak.jpg">
+
+
+	Resim Özellikleri
+
+Sayfaya eklenen resmin bazı özelliklerini değiştirmek için <img> tagının alt, title, width ve height gibi özellikleri kullanılır.
+alt: açıklama (resim olmazsa görünür)
+title: başlık (resmin üzerine gidince görünür)
+width: genişlik
+height: yükseklik
+
+<img src="resimler\foto.jpg" alt="Benim Fotoğrafım" title="Ben" width="150" height="173">
+
+
+
+	Favicon
+
+Favicon resimleri, web sayfalarımızın en üstündeki sekmede görülen 16*16 piksel boyutundaki ICO formatlı resimlerdir.
+Kodların <head> bölümüne yazıldığını gözden kaçırmayın.
+
+<head>
+	<meta charset="UTF-8">
+	<title>Favicon Kullanımı</title>
+	<link rel="shortcut icon" href="favicon.ico">
+</head>
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		
+			LİNK İŞLEMLERİ
+
+	Link Nedir?
+
+Linkler, sayfa içinde farklı konumkara veya sayfa dışındaki farklı adreslere gitmemizi sağlar.
+Herhangi bir metne, resme veya butona link koyabilirsiniz.
+	
+	Link Oluşturma
+
+Herhangi bir metne, resme veya video gibi bir nesneye link atamak isterseniz aşağıdaki gibi bir kod kullanabilirsiniz.
+
+<a href="hedef adres"> nesne </a>
+
+<a href="#"> boş link </a>
+<a href="#ust"> Sayfa Başı </a>
+<a href="index.html"> Anasayfa </a>
+<a href="http://www.site.com"> Git </a>
+<a href="dosya.rar"> İndir </a>
+
+
+	Sayfa Başı Link Uygulaması
+
+Ziyaretçiyi sayfa başına göndermek için <body> etiketi aşağıdaki gibi değiştirilir:
+	<body id="ust">
+Sayfanın en altına </body> etiketinin üstüne aşağıdaki kodu yazın:
+	<a href="#ust"> Sayfanın Başına Git... </a>
+
+
+	Sayfa İçi Gezinti Menüsü
+
+<body id="ust">
+        <h1>Kurslarımız:</h1>
+        <ul>
+            <a href="#yazilim"><li>Yazılım Uzmanlığı</li></a>
+            <a href="#sistem"><li>Sistem Uzmanlığı</li></a>
+            <a href="#web"><li>Web Tasarım</li></a> 
+        </ul>
+
+        <h2 id="yazilim">Yazılım Uzmanlığı</h2>
+        <p>...................................</p>
+        
+        <h2 id="sistem">Sistem Uzmanlığı</h2>
+        <p>...................................</p>
+        
+        
+        <h2 id="web">Web Tasarım</h2>
+        <p>...................................</p>
+        
+        <a href="#ust">Sayfa Başına Dön...</a>
+    </body>
+
+
+
+	Sayfalar Arası Link Uygulaması
+
+Bu anasayfa için:
+
+<body>
+        <h1>Site Dolaşım Menüsü</h1>
+        <a href="index.html">Anasayfa</a> |
+        <a href="urunlerimiz.html">Ürünlerimiz</a> |
+        <a href="hizmetlerimiz.html">Hizmetlerimiz</a> |
+        <a href="iletisim.html">İletişim</a>
+        <h1>Anasayfa</h1>
+</body>
+
+
+Bu ürünlerimiz için:
+
+<body>
+        <h1>Site Dolaşım Menüsü</h1>
+        <a href="index.html">Anasayfa</a> |
+        <a href="urunlerimiz.html">Ürünlerimiz</a> |
+        <a href="hizmetlerimiz.html">Hizmetlerimiz</a> |
+        <a href="iletisim.html">İletişim</a>
+        <h1>Ürünlerimiz</h1>
+</body>
+
+Bu hizmetlerimiz için:
+
+<body>
+        <h1>Site Dolaşım Menüsü</h1>
+        <a href="index.html">Anasayfa</a> |
+        <a href="urunlerimiz.html">Ürünlerimiz</a> |
+        <a href="hizmetlerimiz.html">Hizmetlerimiz</a> |
+        <a href="iletisim.html">İletişim</a>
+        <h1>Hizmetlerimiz</h1>
+</body>
+
+Bu iletişim için:
+
+<body>
+        <h1>Site Dolaşım Menüsü</h1>
+        <a href="index.html">Anasayfa</a> |
+        <a href="urunlerimiz.html">Ürünlerimiz</a> |
+        <a href="hizmetlerimiz.html">Hizmetlerimiz</a> |
+        <a href="iletisim.html">İletişim</a>
+        <h1>İletişim</h1>
+</body>
+
+	
+
+	Dosya İndirme Linki
+
+<h2>Türk Bayrağını İndir</h2>
+<a href="resimler/bayrak.jpg">Bayrağı İndir...</a>
+<h2>HTML Dökümanını İndir</h2>
+<a href="html_giris.txt">Döküman İndir...</a>
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+		TABLO İŞLEMLERİ
+	
+	Tablo Oluşturma
+
+Tablo basitçe satır ve sütunlardan oluşur. Satır ve sütunların kesiştiği yerde adına hücre denilen kutucuklar oluşur.
+<tr> etiketi satırları, <td> etiketi sütunları oluşturur.
+<td></td> grubuna hücre denir.
+
+<table>
+	<tr> <td></td> <td></td> <td></td> <td></td> </tr> -->
+	<tr> <td></td> <td></td> <td></td> <td></td> </tr> --> Satırlar
+	<tr> <td></td> <td></td> <td></td> <td></td> </tr> -->
+	<tr> <td></td> <td></td> <td></td> <td></td> </tr> --> 
+                 |	   |	     |		|
+			     Sütunlar
+</table>
+
+Örnek:
+<h1>Tablo Oluşturma</h1>
+        <table border="5">
+            <tr><td>Ad Soyad:</td><td>Batuhan Kesgin</td></tr>
+            <tr><td>Doğum Tarihi:</td><td>07.04.2000</td></tr>
+        </table>
+
+	
+	Tablo Biçimlendirme
+<table border="1">
+            <caption>Ülke Nüfusları</caption>
+            <thead>
+                <tr><th>Ülke</th><th>Nüfus</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Türkiye</td><td>XXX</td></tr>
+                <tr><td>İngiltere</td><td>YYY</td></tr>
+            </tbody>
+	    <tfoot>
+                <tr><td>Toplam Nüfus:</td><td>XXX+YYY</td></tr>
+            </tfoot>
+</table>
+
+
+	Hücre Birleştirme
+
+Hücreleri birleştirmek için colspan ve rowspan komutu kullanılır.
+colspan: satırlardaki hücreleri birleştirir.
+rowspan: sütunlardaki hücreleri birleştirir.
+
+<table border="5">
+                <tr><td colspan="2">Ülke Bilgileri</td></tr>
+                <tr><td>Ülke</td><td>Nüfus</td></tr>
+		<tr><td>Türkiye</td><td>TTT</td></tr>
+		<tr><td>Almanya</td><td>AAA</td></tr>
+		<tr><td>Yunanistan</td><td>YYY</td></tr>
+</table>
+
+!!! 2 hücreyi birleştir anlamına geliyor.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		
+			FORM İŞLEMLERİ
+	Form Nedir?
+
+Ziyaretçiden veri almaya yarayan metin kutusu, seçenek kutusu veya buton gibi elemanlardan oluşan kodlara form denir.
+İnterneti gazete, dergi veya televizyon gibi diğer ortamlardan ayıran en önemli özellik formlardır.
+
+
+	Form Oluşturma
+
+Form Oluşturmak için <form> tagı kullanılır.
+Forma isim vermek için name, forma girilen verilerin hangi sayfaya gönderileceğini belirlemek için action, verilerin hedef sayfaya
+gönderilme yöntemini belirlemek için ise method özelliği kullanılır.
+
+<body>
+	<form> name="email" action="mail.php" method="get">
+	</form>
+</body>
+
+method get bilgiyi görünür şekilde yollar, method post bilgiyi görünmez şekilde yollar.
+
+
+	Metin Kutusu
+
+Ziyaretçiden sayısal veya sözel veriler almak için kullanılır.
+metin kutusunun sözdizimi aşağıdaki gibidir:
+
+<form name="email" action="mail.php" method="get">
+	Ad: <input type="text" name="ad" max="30" required>
+	<br>
+	Soyad: <input type="text" name="ad" max="30" required>
+</form>
+
+
+	Onay ve İptal Butonları
+
+Forma Girilen verilerin onaylanması ve action ile belirlenen sayfaya gönderilmesi için onay (submit) butonu, formun temizlenmesi için ise iptal (reset) butonu kullanılır.
+
+<form name="test" action="alan.php" method="get">
+	Ad Soyad:
+	<input type="text" name="adsoyad">
+	<br>
+	<input type="submit" value="Gönder">  Forma girilen verileri onaylamak için!!
+	<br>
+	<input type="reset" value="İptal">    Forma girilen verileri silmek için!!
+<form/>
+
+!! value özelliği de butonların üzerinde görülen metni belirler.
+
+
+	Email ve URL Kutuları
+Email ve URL adres kutusu oluşturmak ve bunların kontrolünü sağlamak için aşağıdaki etiketler kullanılır.
+
+<body>
+	<form name="email" action="mail.php" method="get">
+		Ad: <input type="text" name="ad" required> 
+		<br>
+		Soyad: <input type="text" name="soyad">
+		<br>
+		Email: <input type="email" name="email">
+		<br>
+		Web: <input type="url" name="web">
+		<br>
+	</form>
+</body>
+
+!! Zorunlu alan ise required eklenir. 
+
+
+
+	Form Elemanlarının Ortak Özellikleri
+
+* size: form elemanının genişliği
+* value: form elemanının değeri
+* placeholder: form elemanında bir açıklama metni görünmesini sağlar
+* name: form elemanının benzersiz adı
+* id: form elemanının tanım kodu. css ve JS kodu uygulamak için kullanılır
+* autofocus: sayfa açıldığında fare imlecinin form elemanını aktif etmesini sağlar
+* autocomplete: formlara girilen verilerin daha önce girilen veriler dikkate alınarak tamamlanmasını sağlar
+* maxlength: form elemanına girilebilecek maksimum karakter miktarını belirler
+* required: form elemanının mutlaka doldurulması gerektiğini belirtir. form elemanı boş bırakılırsa hata mesajı alınır
+* disabled: form elemanının pasif hale getirilmesini ve kullanılmamasını sağlar.
+
+
+	Metin Alanı (Text Area)
+
+Metin kutusu tek satırlık veri girişi için kullanılırken, metin alanı çok satırlı veri girişi için kullanılır.
+
+Öneri: <textarea name="oneri" id="oneri" cols="30" rows="5"></textarea>
+
+
+	Onay Kutusu (CheckBox)
+
+Ziyaretçiden Evet/Hayır, Doğru/Yanlış, Onayla/Onaylama gibi cevaplar girmesini istiyorsanız checkbox kullanırsınız.
+Formdaki onay kutularının name özelliği farklı olmalıdır.
+
+
+	Seçenek Listesi (ComboBox)
+
+Eğer seçenek sayısı çok fazla ise Seçenek Listesi kullanılır. Örneğin ziyaretçinin doğduğu ili soruyorsanız 81 seçenek vardır.
+
+<form>
+	Doğum Yeri:
+	<select name="iller">
+		<option> Adana </option>
+		<option> Antalya </option>
+		<option> Ankara </option>
+		<option> İstanbul </option>
+	</select>
+	<br>
+	<input type="submit">
+	<input type="reset">
+</form>
+
+
+
+	Resimli Form Onaylama
+
+Görselliği artırmak nedeniyle normal onay butonu yerine resim kullanabilirsiniz. Bunun için aşağıdaki kod yazılmalıdır:
+
+<form method="post" action="islem.php">
+	Ad Soyad: <input type="text" name="ad">
+	<br>
+
+	Email: <input type="email" name="email">
+	<br>
+
+	ileti: <textarea name="ileti" rows="4" cols="50">
+	</textarea>
+	<br>
+
+	<input type="image" src="resimler/onay.jpg">
+</form>
+
+
+
+	Diğer Form Elemanları
+Kullanımı aşağı yukarı daha önce anlatılan form elemanları gibi olan diğer form elemanları aşağıdaki gibidir:
+* color
+* date
+* datetime
+* number
+* password
+* range
+* tel
+* search
+
+	
+	Radio Buttons
+
+The <input type="radio"> defines a radio button.
+Radio buttons let a user select ONE of a limited number of choices.
+
+<h2>Radio Buttons</h2>
+<p>Choose your favorite Web language:</p>
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form> 
+
+
+
+	Checkboxes
+The <input type="checkbox"> defines a checkbox.
+Checkboxes let a user select ZERO or MORE options of a limited number of choices.
+
+<h2>Checkboxes</h2>
+<p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+<form action="/action_page.php">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+		
+		VİDEO VE SES İŞLEMLERi
+
+	Yaygın Dosya Formatları
+
+HTML5'ten önce farklı ses ve video türleri için farklı eklentiler kullanılıyordu. Eğer bilgisayarda bu eklentiler yoksa dosyalar çalışmıyordu.
+HTML5 ile birlikte ses ve video dosyaları doğrudan desteklendi. Böylece, eklenti yüklemeden çoklortam dosyaları çalışmaktadır.
+HTML5 ile birlikte aşağıdaki formatlar belirlendi ve bunların kullanılması önerildi.
+	* Ses Dosyaları: MP3, WAV ve Ogg
+	* Video Dosyaları: MP4, WebM ve Ogg
+
+	Video Dosyalarının Kullanımı
+
+Videolar için proje klasöründe video adli bir klaör oluşturun ve tüm videoları bu klasörün içine kaydedin.
+Sayfada video göstermek için aşağıdaki gibi bir kod ekleyin.
+
+<video src="video/man.mp4" height="300" autoplay controls loop><video/>
+autoplay: sayfa açılır açılmaz videonun oynamaya başlamasını sağlar.
+control: videonun dur/oynat gibi komutlarını içerir.
+loop: videonun sürekli oynamasını sağlar.
+ 
+
+	Farklı Tarayıcı Desteği
+
+Farklı tarayıcılarda sorun yaşamamak için aşağıdaki yöntemi kullanabilirsiniz:
+
+<video width="320" height="240" controls>
+	<source src="./video/clip.mp4" type="video/mp4"
+	<source src="./video/clip.ogg" type="video/ogg">
+	<source src="./video/clip.webm" type="video/webm">
+</video>
+
+
+	Video Etiketinin Özellikleri
+<video> etiketinde sıkça kullanılan özellikler
+* src: Video adresi
+* height: Video yüksekliğigenişliği
+* width: Video genişliği
+* autoplay: Sayfa açıldığında video otomatik oynamaya başlar
+* controls: Kontrol düğmelerinin görünmesini sağlar
+* loop: Videonun sürekli oynamasını sağlar
+* preload: Play düğmesine basmadan, sayfa açıldığında video indirilmeye başlanır
+* muted: Videonun sesi kısılmış halde başlamasını sağlar
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		
+
+		SİTE YAYINLAMA
+
+	Ücretsiz Alan Adı ve Hosting
+
+Yurtdışında ve yurtiçinde birçok firma ücretsiz alan adı ve barındırma hizmeti vermektedir.
+Ara motoruna "ücretsiz hosting" yazın ve bir firma bulup üye olun.
+https://infinityfree.net/ adresinde ücretsiz alan adı ve barındırma hizmeti bulduk.
+
+
+	FTP Yazılımları
+
+FTP, File Transfer Protokol, yani Dosya Transfer Protokolü kelimelerinin kısaltılmışıdır.
+FTP, iki bilgisayar arasında dosya transferi için kullanılan bir protokoldür.
+FTP programları ise bir bilgisayardan web sunucuya veya web sunucudan bilgisayara dosya transfer yapabiliriz.
+En yaygın kullanılan yazılımlardan biri Filezilla'dır.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+		TEMEL CSS BİLGİSİ
+
+
+	CSS (Cascade Style Sheet) Nedir
+
+HTML komutlarını biçimlendirmek için kullanılır.
+Örneğin, CSS kullanarak <p> tagının içindeki metinlerin yazı tipini, rengini, boyutunu ve diğer birçok görsel özelliğini değiştirebilirsiniz.
+Style kelimesi Türkçe'de biçem anlamına gelir; biçem kabaca ayarlar topluluğu olarak tanımlanır.
+Yani, bazı ayarlar yapıyoruz, bu ayarlara bir isim veriyoruz ve bu biçemi değişik nesnelere uygulayarak nesnenin görüntüsünü değiştiriyoruz.
+
+	CSS Yazım Kuralları
+
+CSS komutları 3 parçadan oluşur:
+* HTML Komutu (Selector)
+* Özellik (Property)
+* Değer (Value)
+Tipik bir CSS komutunun yapısı aşağıdaki gibidir:
+
+seçici		{özellik:değer;		özellik:değer;}
+p		{color:red}
+h1		{color:green;		font-size:20px}
+
+
+!! CSS kodlarındaki okunabilirliği artırmak için genelde her özellik alt alta yazılır.
+
+{
+	color:red;
+	font-size:20px;
+}
+
+
+Yazmak istediğiniz CSS kodunu sadece belli bir id değerine sahip HTML komutuna uygulamak istiyorsanız sözdizimi:
+
+#id-değeri
+{
+	css kodu1;
+	css kodu2;
+}
+
+
+CSS kodlarını birden fazla HTML komutuna uygulamak isterseniz CSS kodlarına bir isim verip class özelliği uygularsınız:
+
+.css_ismi
+{
+	css komutu;
+}
+
+
+Eğer CSS kodları içine açıklama metni eklemek istiyorsanız:
+
+/*Açıklama metni*/
+
+
+
+	CSS Kodları Nereye Yazılır
+
+CSS kodları:
+1. HTML tagının içine (inline)
+2. Sayfanın head bölümüne (internal)
+3. Bir dosyaya (external)
+
+
+	Satır İçi CSS Kodları
+
+<p style="color:red">
+	Bu paragrafta yazılan metinler kırmızı olur.
+</p>
+
+
+	Dahili CSS Kodları
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	p{
+		font-family:arial;
+		font-size:16px;
+		color:blue;
+	}
+	</style>
+</head>
+<body>
+	<p>head bölgesine yazılan CSS kodları denemek için yazılan metinler...</p>
+</body>
+
+
+
+
+
+
+<head>
+        <style>
+            h1{
+                color: blueviolet;
+                font-size: 20px;
+            }
+            p{
+                color: cadetblue;
+                font-size: 14px;
+            }
+        </style>
+</head>
+
+
+
+<body>
+	<h1>Satır İçi CSS</h1>
+        <p style="color: orange;">
+            Büşra Su Altın
+        </p>
+</body>
+
+
+
+
+
+	Harici CSS Kodları
+CSS kodları metin tabanlı bir dosya içine yazılır ve ihtiyaç duyulan her sayfaya bağlanır (link).
+
+stil.css bu isimde bir dosya açılıp css kodlarının içine yazılması gerekiyor.
+<link rel="stylesheet" href="stil.css" type="text/css" />
+
+
+
+	Hangi CSS Kodu Öncelikli
+HTML komutuna daha yakın olan CSS kodu önceliklidir.
+
+<head>
+        <link rel="stylesheet" href="stil.css">
+        <style>
+            p{
+                color:blue
+            }
+        </style>
+</head>
+<body>
+        <p style="color: red;">Merhaba</p>
+</body>
+
+
+!! red blue'dan önceliklidir.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+		SEÇİCİ KULLANIMI
+
+	Seçici Nedir? Ne İşe Yarar?
+
+Neyi seçerseniz onunla ilgili işlem yaparsınız.
+CSS kodu uygulayacaksınız, öncelikle HTML elemanını seçmeniz gerekir.
+İşte bu aşamada selector ya da seçici dediğimiz kodlar devreye girmektedir.
+
+Seçici		{özellik:değer;		özellik:değer}
+p		{color:red}		
+h1		{color:green;		font-size:20px}
+
+Seçici {CSS Kodu}		Açıklama
+-----------------		---------
+*				Her şey seçilecek
+p				p tagı seçilecek
+#ilk				id değeri #ilk olan seçilecek
+.son				class değeri .son olan seçilecek
+h1.egik				class değeri .egik olan h1 etiketleri seçilecek
+p strong			p tagı içindeki tüm strong tagları seçilecek
+nav #buton			nav tagı içinde id değeri #buton tüm elemanları seçilecek
+h1,h2,h3,h4,h5,h6		h1-h6 arası tüm tagları seçilecek
+
+
+<p class="yesil" id="ilk">Merhaba</p> ---> böyle bir durumda id en önceliklidir. daha sonra class önceliği gelir. ardından da p tagı için herhangi bir değişiklik varsa o gelir.
+
+
+	Etiket İçinde Id (Tekil) Seçici Komutları
+<head>
+        <style>
+            p.egik{
+                font-style: italic;
+                color: coral;
+
+            }
+        </style>
+</head>
+<body>
+        
+        <p class="egik">Windows</p> 
+</body>
+
+	
+
+	Karmaşık Seçici Örnekleri
+
+Seçici {CSS Kodu}		Açıklama
+-----------------		---------
+.banner p			class değeri banner olan eleman içindeki p tagı seçilecek.
+div>p				ebeveyni div olan tüm p tagları seçilecek
+.menu ul li			class değeri menu olan eleman içinde bulunan ul tagının içindeki li tagını seç
+nav.menu li			nav tagı içinde bulunan ve class değeri menu olan eleman içindeki li tagı seçilecek
+body>p:first-child		body tagı içindeki ilk paragraf (ilk çocuk eleman)
+body>p:last-child		body tagı içindeki son paragraf (son çocuk eleman)
+:active				aktif eleman seç
+:after				sonraki elemanı seç
+
+
+!! nokta ile başlayanlar class idir.   
+
+
+
+	Link ve Özellik Seçiciler
+Seçici {CSS Kodu}		Açıklama
+-----------------		---------
+a:link				henüz ziyaret edilmemiş linkleri seçer
+a:visited			ziyaret edilmiş linkleri seçer
+a:focus				klavye ile etkinleştirilmiş linkleri seçer
+a:hover				üzerinde fare olan linkleri seçer
+input[type]			<input> içinde type özelliğine sahip olanları seçer
+input[type="text"]		<input> içinde type özelliği text olanları seçer
+img[title~="kedi"]		<img> tagındaki title özelliği kedi olanları seçer
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			CSS KUTU MODELİ
+
+	CSS Kutu Modeli Nedir?
+
+CSS web sayfasında bulunan HTML komutlarını birer kutu olarak görür.
+CSS'e birer kutu gibi görünen HTML komutları içerik, iç-aralık (padding), kenarlık (border) ve dış-aralıktan (margin) oluşmaktadır.
+Yani, her bir HTML komutu kutu modelinde aşağıdaki parametrelere sahiptir.
+
+|---------------------------|
+| MARGIN                    |
+| |------------------------||
+| | BORDER                 ||
+| ||----------------------|||
+| || PADDING              |||
+| ||                      |||
+| ||       CONTENT        |||
+| ||----------------------|||
+| |------------------------||
+|---------------------------|
+
+Kutu modelinde bazı HTML komutları block, bazıları HTML ise inline olarak çalışır.
+Blok olarak çalışan hx, table veya p gibi komutlar sayfanın solundan sağına kadar bulundukları tüm satırı kaplarken, inline olarak çalışan a,b,em veya img gibi komutlar sadece bulundukları alanı kaplar.
+
+	Kutu Boyutu ve Aralıklar
+
+Kutu boyutunu belirlemek için width ve height özellikleri, aralıkları belirlemek için ise padding ve margin özellikleri kullanılır.
+h1{
+        border-style: solid;
+        width: 200px;
+        height: 40px;
+        padding: 30px 30px 30px 30px;
+	margin: 30px;
+}
+
+	Kutu Kenarları
+
+Kutu kenarlıklarını kontrol etmek için border özelliği kullanılır.
+Özellik			Alabileceği Değer		Açıklama
+-------			-----------------		--------
+border-style		none,solid,dotted,dashed,	Kenar çizgi tipini belirler
+			double, groove, ridge,
+			inset, outset
+
+border-width		px,thin,medium,thick		Çizgi kalınlığını ayarlar
+border-color		renk_adı,#rrggbb,rgb(r,g,b)	Kenarlık rengini belirler
+
+
+	Kutu Rengi ve Ardalan Ayarları
+Ardalanını değiştirmek için background özelliği kullanılır. Ayrıca, aşağıdaki özellikleri de kullanabilirsiniz. 
+* background-color
+* background-image
+* background-size
+
+p{
+	background-color: yellow;   /*sarı ardalan rengi*/
+	background-image: url(resimler/ayyildiz.jpeg)   
+	width: 400px;    /*genişlik*/ 
+	border-style: inset;   /*gölgeli çizgi*/
+	border-width: 10px;   /*çizgi kalınlığı*/
+}
+
+
+p{
+        border-style: solid;
+        border-width: 5px;
+        border-color:chocolate;
+        background-color: bisque;
+        width: 200px;
+        height: 100px;
+        background-image: url(resimler/tatli.png);
+        background-size: 200px;
+}
+
+	Ardalan Resminin Konum Ayarları
+
+Ardalan resminin konumunu belirlemek için aşağıdaki özellikler kullanılır.
+* background-repeat
+* background- position
+* background- attachment
+
+p{
+	background-color: yellow;   /*sarı ardalan rengi*/
+	background-image: url(resimler/ayyildiz.jpeg) 
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 400px;
+	border-style: inset;
+	border-width: 10px;
+} 
+
+
+	Kutunun Davranışının Değiştirilmesi
+
+hx, p, li, form, table veya div gibi komutlar block davranışına sahiptir ve bulundukları yerdeki tüm satırı işgal ederler.
+a, span, em, b veya i gibi komutlar ise inline davranışa sahiptir ve sadece bulundukları yeri işgal ederler.
+Bazı durumlarda inline komutlarun block, block komutlarının ise inline şeklinde davranmasını isteyebiliriz.
+
+<style>
+li{display: inline;}
+a{display: block;}
+</style>
+
+
+	Genel Sayfa Düzeni
+
+Çok farklı sayfa tasarımları olmasına rağmen klasik bir sayfanın genel yapısı çoğunlukla yandaki gibidir.
+Bu tasarım ve etiketlerle arama motoruna sayfayla ilgili en doğru bilgi verilmiş olur.
+
+<head>
+        <style>
+            #sayfa{
+                border-style: solid;
+                width: 300px;
+                margin: auto;
+                background-color: chocolate;
+
+            }
+            header{
+                border-style: dotted;
+                border-color: cornflowerblue;
+                background-color: cyan;
+                width: 280px;
+                margin: auto;
+                height: 50px;
+
+            }
+            nav{
+                border-style: dashed;
+                border-color: darkgreen;
+                background-color: yellowgreen;
+                width: 280px;
+                margin: auto;
+                height: 30px;
+            }
+            article{
+                border-style: solid;
+                border-color:darkmagenta;
+                background-color:hotpink;
+                width: 280px;
+                margin: auto;
+                height: 250px;
+            }
+            footer{
+                border-style:ridge;
+                border-color:crimson ;
+                background-color: indianred;
+                width: 280px;
+                margin: auto;
+                height: 100px;
+            }
+        </style>
+</head>
+<body>
+       <div id="sayfa">
+            <header>
+                Buraya logo ve reklam gelicek.
+            </header>
+            <nav>
+                Buraya ana menü gelicek.
+            </nav>
+            <article>
+                Burası içerik bölümü.
+            </article>
+            <footer>
+                Burası sayfanın en altı.
+            </footer>
+        </div>
+</body>
+
+
+	Kutu Konumunun Ayarlanması
+
+Kutuların sayfada bulundukları yeri belirlemek için position özelliği kullanılır.
+Özellik ve Değer		Açıklama
+----------------		---------
+position:static;		Her kutunun varsayılan değeridir. Static değere sahip kutular nereye konulduysa orada bulunurlar.
+				Kutuların varsayılan değeridir.
+
+position:relative;		Kutunun bulunduğu konumuna göre taşınmasını sağlar.
+
+position:fixed;			Kutunun sayfaya göre ayarlanmasını sağlar.
+
+position:absolute;		Başka kutu içinde bulunan kutuları kontrol etmek için kullanılır. İçinde bulunduğu kutuya göre üstten, sağdan,
+				alttan ve soldan mesafeler verilerek kutunun konumu ayarlanır.
+
+
+	Kutuların Öne/Arkaya Alınması
+Kutuların ön veya arkaya taşınması için z-index özelliği kullanılır.
+Daha yüksek z-index değerine sahip olan daha önde görünür.
+
+<style>
+    .kutu{
+	width: 400px;
+	height: 150px;
+	border-style: solid;
+	background-color: cyan;
+	}
+    #bir{z-index:1;}
+    #iki{
+	position: relative;
+	top: -50px;
+	left: 50px;
+	background-color: yellow;
+	z-index:-1;
+	}
+</style>
+
+	
+	Kutu Köşelerinin Yuvarlatılması
+Kutu kenarlarını yuvarlatmak için border-radius özelliği kullanılır.
+
+<style>
+   .kutu{
+	width: 300px;
+	height: 200px;
+	border-style: solid;
+	border-width: 5px;
+	background-color: yellow;
+	border-radius: 25px;
+	}
+</style>
+
+
+	Overflow Komutu ile Taşan İşlemin Düzenlenmesi
+
+Eğer küçük bir kutunuz varsa ve içine alabileceğinden daha fazla içerik koyarsanız adına overflow/taşma denir.
+Overflow özelliği ile taşan içeriğin durumu belirlenebilir.
+
+Özellik ve Değer		Açıklama
+----------------		---------
+overflow:visible;		Varsayılan olarak bu değer kullanılır. Eğer içerik kutu içine sığmazsa taşan kısım alttan devam eder ve ziyaretçiye gösterilir.
+overflow:hidden;		İçerik kutu içine sığmazsa taşan kısım ziyaretçiye gösterilmez.
+overflow:scroll;		İçerik kutu içine sığmazsa taşan kısım ziyaretçiye gösterilmez ama bir kaydırma çubuğu ile taşan içeriğin görüntülenmesi sağlanır.
+overflow:auto;			Eğer taşma olursa kaydırma çubuğu gösterilir ve taşan içerik kaydırma çubuğu ile görüntülenebilir.
+
+
+	Gölge Oluşturma
+Kutuya gölge yapmak için box-shadow özelliği kullanılır.
+* box-shadow: h-shadow v-shadow blur spread color inset;
+
+Değerler		Açıklama
+--------		--------
+none			Varsayılan değerdir. Gölge olmamasını sağlar.
+h-shadow		Gölgenin yatay boyutu
+v-shadow		Gölgenin dikey boyutu
+blur			Gölgenin kenarını belirlenen boyutta yumuşatır.
+spread			Gölgenin tüm yönlerde genişlemesini sağlar.
+color			Gölge rengi
+inset			Gölgeyi nesnenin iç tarafına yapar.
+
+
+	Float Komutu ile Kutu Hizalama
+
+Kutunun sola veya sağa yaslanması için float özelliği kullanılır.
+Diğer kutular float özelliği ile yaslanan kutunun etrafını sararlar.
+Eğer nesnelerin kutu etrafını sarmasını istiyorsanız clear özelliği kullanırsınız.
+
+<style>
+img{
+	float: left;
+	margin: 15px;
+}
+</style>
+
+!!sayfa_duzeni.html dosyasını (CSS klasöründeki) incele.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+			CSS İLE BİÇİMLENDİRME
+	
+	Paragrafın Biçimlendirilmesi
+Özellik		Alabileceği Değerler		Açıklama
+-------		--------------------		---------
+text-indent	em, px				Paragrafın ilk satırdaki girintisini ayarlar.
+text-align	left, right, center, jusify	Paragrafın sola, sağa, ortaya veya her iki kenara yaslanmasını sağlar.
+text-height	em, px				Paragraftaki satırlar arasındaki mesafeyi ayarlar.
+
+<head>
+        <style>
+            p{
+                text-indent: 30px; 
+                text-align: center;
+                line-height: 20px;
+            }
+        </style>
+</head>
+
+
+	Metinlerin Biçimlendirilmesi
+	
+/*Metin Özellikleri*/
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: cadetblue;
+                font-size: 15px;
+                font-weight: bolder;
+                font-style: oblique;
+                font-variant: normal;
+                text-transform: uppercase;
+                text-decoration: underline;
+                letter-spacing: 2px;
+                word-spacing: 5px;
+
+
+	Yazıtipi Özellikleri
+
+Özellik			Alabileceği Değerler			Açıklama
+-------			--------------------			---------
+font-family		times,courier,verdana...		yazıtipi
+
+color			renkadı, #rrggbb ...			metin rengi
+		
+font-size		smaller, small, medium, large,
+			larger, px, em...			metin boyutunu değiştirir
+
+font-weight		lighter, normal, bold, bolder		metinlerin daha ince, normal veya kalın olması
+
+font-style		normal, italic				metinlerin normal veya eğik görünmesini sağlar
+
+font-variant		normal, small-caps			metinlerin küçük harf boyutlarında ama büyük harf karakterleri ile görünmesini sağlar
+
+text-transform		none, lowercase, uppercase,
+			capitalize				metinleri büyük harfe veya küçük harfe çevirmeye yarar
+
+text-decoration		none, underline, overline,
+			line-through				metinlerin altını, üstünü veya üzerini çizmek için kullanılır
+
+letter-spacing		normal, em				harfler arasındaki mesafe
+
+word-spacing		normal, em				kelimeler arasındaki mesafe
+
+
+
+	Liste Biçimlendirilmesi
+
+Madde isimlerini değiştirmek için list-style-type özelliği kullanılır.
+* none (madde imi yok)
+* disk (daire)
+* circle (çember)
+* square (kare)
+* decimal (numara)
+* lower-alpha (küçük harf, a, b, c)
+* lower-greek (yunanca küçük harf)
+* lower-latin (latince küçük harf, a, b, c)
+* lower-roman (küçük roma rakamı, i, ii, iii, iv, v)
+* upper-alpha (büyük harf, A, B, C)
+* upper-greek (yunanca büyük harf)
+* upper-latin (latince büyük harf, A, B, C)
+* upper-roman (büyük roma rakamı, I, II, III, IV, V)
+* url("resim") (madde imi yerine resim görüntülenir)
+
+
+<style>
+  ul{
+	list-style-type:none;
+  }
+  li{
+	width: 150px;
+	margin: 5px;
+	padding: 5px;
+	font-family: verdana,arial,times;
+	border-color: blue;
+	border-style: solid;
+	background-color: yellow;
+  }
+</style>
+
+<style>
+      ul{
+            list-style-type: circle;
+        }
+      li{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: coral;
+            font-size: 16px;
+            font-weight: bolder;
+            font-style: italic;     
+      }
+</style>
+
+
+
+	Tablo Biçimlendirme
+
+Tablo biçimlendirmede table, tr, td, th, caption, thead, tbody ve tfoot etiketlerine ayrı ayrı CSS kodları uygulanır.
+Hücre içindeki metinleri hizalamak için aşağıdaki özellikler kullanılır:
+* text-align
+* vertical-align 
+
+Eğer iki-çizgi şeklinde şeklinde görünen kenarlıkları tek çizgiye dönüştürmek istiyorsanız border-collapse:collapse; komutunu kullanmalısınız.
+Tablo veya hücrelere ardalan için:
+* background-color
+* background-image
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+		FORM, LİNK VE MENÜLER
+
+	Formların CSS ile Biçimlendirilmesi
+Form elemanları kutular gibi biçimlendirilir.
+Form elemanının içi ve kenarları biçimlendirilebilir.
+Form elemanlarının içindeki metinler biçimlendirilebilir.
+Formlardaki onay ve iptal butonları biçimlendirilebilir.
+
+
+ <head>
+        <style>
+            input[type=text], input[type=email]{
+                color: darkcyan;
+                background-color: bisque;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 16px;
+                font-weight: bolder;
+            }
+            .formeleman{
+                color: darkseagreen;
+                font-size: 14px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                background-color: darkgoldenrod;
+                border-color: darkmagenta;
+                border-width: 5px;
+                border-style: double;
+                margin: 10px;
+                padding: 10px;
+            }
+            
+        </style>
+</head>
+
+<body>
+        <form action="">
+            Ad Soyad: <input class="formeleman" type="text">
+            <br>
+            E-mail: <input class="formeleman" type="email">
+            <br>
+            Mesaj: <textarea cols="30" rows="4" class="formeleman">
+                
+            </textarea>
+            <br>
+            <input class="formeleman" type="submit">
+            <input class="formeleman" type="reset">
+        </form>
+</body>
+
+
+	Linklerin Biçimlendirilmesi
+Linkler metinler gibi biçimlendirilebilir.
+Linklerin farklı durumları için aşağıdaki özellikler kullanılır.
+* a:link (ziyaret edilmemiş link)
+* a:visited (ziyaret edilmiş link)
+* a:hover (fare link üzerinde)
+* a: active (fare tıkladığında)
+
+a:link, a:visited{
+	display:block;
+	font-weight:bold;
+	color:blue;
+	text-decoration:none;
+	}
+a:hover, a:active{
+	display:block;
+	color:black;
+	}
+
+
+
+<head>
+        <style>
+            #altmenu{
+                background-color: bisque;
+                border-style: solid;
+                border-width: 5px;
+                border-color: grey;
+                width: 300px;
+                margin: auto;
+                text-align: center;
+                padding: 10px;
+                color: hotpink;
+            }
+            a{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 12px;
+                text-decoration: none;
+            }
+            a:link{
+                color: black;
+            }
+            a:visited{
+                color: brown;
+            }
+            a:hover{
+                color: grey;
+                text-decoration: underline;
+            }
+            a:active{
+                color: rebeccapurple;
+                
+            }
+        </style>
+</head>
+
+<body>
+        <nav id="altmenu">
+            <a href="index.html">Anasayfa</a> |
+            <a href="urunlerimiz.html">Ürünlerimiz</a> |
+            <a href="bizkimiz.html">Biz Kimiz?</a> |
+            <a href="iletisim.html">İletişim</a>
+        </nav>
+        
+</body>
+
+
+	Menü Oluşturma ve Biçimlendirme
+Menüler listelerden oluşur.
+Menülerin biçimlendirilmesi CSS Kutu Modeli'nde öğrendiğimiz komutlarla yapılır.
+
+<head>
+        <style>
+            ul{
+                list-style-type: none;
+            }
+            li{
+                border-style: solid;
+                border-color: chocolate;
+                border-width: 5px;
+                border-radius: 10px;
+                width: 80px;
+                padding: 10px;
+                float: left;
+                margin: 5px;
+                background-color: bisque;
+                text-align: center;
+            }
+
+            ul li a {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 14px;
+            }
+            ul li a:hover {
+                color: rebeccapurple;
+                text-decoration: none;
+            }
+        </style>
+</head>
+<body>
+        <ul>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="urunlerimiz.html">Ürünlerimiz</a></li>
+            <li><a href="bizkimiz.html">Biz Kimiz?</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+</body>
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
+		KİŞİSEL WEB SİTESİ UYGULAMASI
+	
+	Site Tasarımına Başlamadan Önce...
+
+Sadece HTML5 ve CSS3 kodları kullanacağız.
+Eğer Photoshop gibi gmrüntü işletme yazılımı biliyorsanız, bu tür yazılımları kullanarak görsellik açısından daha zengin sayfalar tasarlayabilirsiniz.
+Eğer Bootstrap gibi bir CSS3 kütüphanesi biliyorsanız, daha görsel ve daha çekici sayfalar oluşturabilirsiniz.
+Eğer Javascript ve Jquery biliyorsanız daha etkileşimli sayfalar oluşturabilirsiniz.
+Eğer ASP ve PHP gibi bir teknolojiye hakimseniz, dinamik sayfalar oluşturabilirsiniz.
+
+
+	Site Tasarım Aşamaları
+
+	
+HTML Şablon Sayfasının Hazırlanması
+* HTML sayfasının hazırlanması
+* Sayfa dili (lang="tr")
+* Türkçe karakter desteği (meta charset=<<utr-8>>)
+* Sayfa başlığı (tittle)
+* Sayfa tanımı (meta name=<<description>> content=<<...>>)
+* Anahtar kelimeler (meta name=<<keywords>> content=<<...>>)
+* Semantik etiketler
+
+
+	CSS Dosyalarının Oluşturulması
+
+* Harici CSS Dosyası
+  -> style.css
+* CSS dosyasının HTML sayfasına bağlanması
+* CSS kodlarının yazılması
+
+
+	Site Sayfalarının Oluşturulması
+
+* Sayfalar
+  -> index.html
+  -> ben-kimim.html
+  -> egitim.html
+  -> iletisim.html
+* Taklit Site İçeriği
+  -> https://www.lipsum.com/
+
+
+	Sitenin Tarayıcılarla Test Edilmesi
+
+* Explorer
+* Edge
+* Chrome
+* Firefox
+* Safari
+
+
+
+
+
+	Şablon HTML Sayfasının Hazırlanması
+
+<head>
+        <meta charset="utf-8">
+        <title>Büşra Su Altın'ın Resmi Web Sitesi</title>
+        <meta name="description" content="Büşra Su Altın'ın Resmi Web Sitesi">
+        <meta name="keywords" content="Büşra Su Altın, html, css">
+
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+             }
+            
+            #sayfa{
+                width: 400px;
+                min-height: 600px;
+                border-style: solid;
+                border-width: 1px;
+                margin: auto;
+            }
+        </style>
+</head>
+<body>
+        <div id="sayfa">
+            <header id="banner">
+
+            </header>
+            <nav id="anamenu">
+
+            </nav>
+            <article id="icerik">
+
+            </article>
+            <aside id="yanmenu">
+
+            </aside>
+            <footer id="altmenu">
+
+            </footer>
+        </div>
+
+</body>
+
+
+
+
+
+
+
+	Banner Bölümünün CSS Kodları
+
+<style>
+            /*Banner*/
+            #banner{
+                width: 398px;
+                height: 100px;
+                border-style: solid;
+                border-width: 1px;
+                background-color: yellow;
+                margin: auto;
+            }
+
+            /*Logo*/
+            #logo{
+                width: 100px;
+                height: 80px;
+                border-style: dotted;
+                border-width: 1px;
+                background-color: white;
+                position: relative;
+                top: 8px; left: 8px;
+                float: left;
+            }
+
+            /*Sosyal Medya İkonları*/
+            #sosyal{
+                width: 150px;
+                height: 40px;
+                border-style: dotted;
+                border-width: 1px;
+                background-color: white;
+                float: right;
+                position: relative;
+                top: 50px; right: 10px; 
+            }
+</style>
+
+<body>
+        <div id="sayfa">
+            <header id="banner">
+                <div id="logo"> </div>
+                <div id="sosyal"> </div>
+            </header>
+        </div>
+</body>
+
+
+
+
+
+
+	Logo ve Sosyal Medya İkonları
+
+<style>
+	    /*Logo*/
+            #logo{
+                width: 100px;
+                height: 80px;
+                border-style: none;
+                border-width: 1px;
+                background-color: white;
+                position: relative;
+                top: 8px; left: 8px;
+                float: left;
+            }
+
+            /*Sosyal Medya İkonları*/
+            #sosyal{
+                width: 150px;
+                height: 40px;
+                border-style: none;
+                border-width: 1px;
+                background-color: white;
+                float: right;
+                position: relative;
+                top: 50px; right: 10px; 
+            }
+
+            /*İkonların Konumları ve Tipleri*/
+            #ikon{
+                float: right;
+                margin-left: 10px;
+                
+            }
+</style>
+
+<body>
+        <div id="sayfa">
+            <header id="banner">
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="resimler/ben.jpg" alt="Büşra Su Altın"
+                        title="Büşra Su Altın">
+                    </a>
+                </div>
+                <div id="sosyal">
+                    <a href="https://www.instagram.com/busrasualtin">
+                        <img id="ikon" src="resimler/insta.png" alt="">
+                    </a>
+                    <a href="https://www.twitter.com/busrasualtin">
+                        <img id="ikon" src="resimler/tw.png" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/b%C3%BC%C5%9Fra-su-alt%C4%B1n-199577224/">
+                        <img id="ikon" src="resimler/linkedin.png" alt="">
+                    </a>
+                    
+                </div>
+            </header>
+        </div>
+</body>
+
+
+
+
+
+
+	Ana Menünün Oluşturulması
+
+<style>
+	    /*Ana Menü*/
+            #anamenu{
+                width: 398px;
+                height: 50px;
+                border-style: dotted;
+                border-width: 1px;
+                background-color: yellowgreen;
+                margin: auto;
+            }
+
+            #anamenu ul{
+                list-style-type: none;
+            }
+
+            #anamenu ul li{
+                width: 80px;
+                border-style: solid;
+                border-width: 3px;
+                border-radius: 5px;
+                border-color: darkblue;
+                background-color: lavenderblush;
+                float: left;
+                padding: 4px;
+                margin-left: 4px;
+                position: relative;
+                top: 10px;
+                text-align: center;
+            }
+
+            #anamenu ul a{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-decoration: none;
+                font-weight: bolder;
+            }
+
+            #anamenu ul a:link{
+                color: darkblue;
+            }
+
+            #anamenu ul a:visited{
+                color: darkkhaki;
+            }
+
+            #anamenu ul a:hover{
+                color: grey;
+                text-decoration: underline;
+            }
+
+            #anamenu ul a:active{
+                color: crimson ;
+            }
+</style>
+
+<body>
+<nav id="anamenu">
+           <ul>
+                 <li><a href="index.html">Anasayfa</a></li>
+                 <li><a href="ben-kimim.html">Hakkımda</a></li>
+                 <li><a href="egitim.html">Eğitim</a></li>
+                 <li><a href="iletisim.html">İletişim</a></li>
+           </ul>
+</nav>
+</body>
+
+
+
+
+
+
+	İçerik Bölümü ve Yan Menünün Oluşturulması
+
+ <style>
+/*İçerik ve Yan Menü Kodları*/
+            #icerik{
+                width: 300px;
+                min-height: 400px;
+                border-style: dotted;
+                border-width: 1px;
+                background-color: white;
+                float: left;
+            }
+            #yanmenu{
+                width: 96px;
+                min-height: 400px;
+                border-style: dotted;
+                border-width: 1px;
+                background-color: royalblue;
+                float: left;
+            }
+            .resim{
+                float: left;
+                width: 100px;
+                margin: 10px;
+            }
+            .metin{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 12px;
+                color: darkblue;
+            }
+            .baslik{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 24px;
+                color: darkcyan;
+                font-weight: bolder;
+
+            }
+</style>
+
+<body>
+<article id="icerik">
+                <img class="resim" src="resimler/at.jpg" 
+                alt="at" title="at">
+                <h1 class="baslik">"Lorem Ipsum"</h1>
+                <p class="metin">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Duis vel tellus bibendum, rutrum arcu ut, sagittis enim. 
+                    Vestibulum ante ipsum primis in faucibus orci luctus et 
+                    ultrices posuere cubilia curae; Cras ante est, ultrices 
+                    sit amet lacus vel, tristique semper eros.
+                </p>
+            </article>
+            
+            <aside id="yanmenu">
+                <h1 class="baslik">Haber 1</h1>
+                <p>
+                    cubilia curae habitant morbi tristique accumsan luctus mi
+                    semper nec bitant morbi vel tellus bibendum
+                </p>
+                <h1 class="baslik">Haber 2</h1>
+                <p>
+                    cubilia curae habitant morbi tristique accumsan luctus mi
+                    semper nec bitant morbi vel tellus bibendum
+                </p>
+                <h1 class="baslik">Haber 3</h1>
+                <p>
+                    cubilia curae habitant morbi 
+                </p>
+            </aside>
+</body>
+
+
+
+
+
+
+	Alt Menünün Oluşturulması
+
+<style>
+/*Alt Menü*/
+            #altmenu{
+                width: 398px;
+                height: 45px;
+                border-style: dotted;
+                border-width: 1px;
+                background-color: aqua;
+                float: left;
+                text-align: center;
+                color: black;
+            }
+            #altmenu a{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 10px;
+                font-weight: bolder;
+                color: black;     
+            }
+            #altmenu a:hover{
+                color: gray;
+                text-decoration: none;
+            }
+            .kucukmetin{
+                font-size: 10px;
+
+            }
+</style>
+
+<body>
+<footer id="altmenu">
+                
+                    <a href="index.html">Anasayfa</a> |
+                    <a href="ben-kimim.html">Hakkımda</a> |
+                    <a href="egitim.html">Eğitim</a> |
+                    <a href="iletisim.html">İletişim</a>
+                    <br>
+                    <p class="kucukmetin">Tüm hakları saklıdır.</p>
+            </footer>
+</body>
+
+
+
+
+
+	!!! HTML klasöründeki kisisel-site.html ile kisisel-site2.html (style.css ile birlikte) dosyalarını incelemeyi unutma
+
+
+
+	Hazır Şablonlar
+
+Bireysel veya ticari web sayfaları tasarlamak için internetten bulabileceğiniz hazır şablonları kullanabilirsiniz.
+Arama motoruna <<free html template>> yazarak birçok ücretsiz şablona ulaşabilirsiniz.
+* https://www.free-css.com/
+* https://html5-template.com/
+* https://themeforest.net/
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+		JAVASCRİPT
+
+	Javascript Nedir?
+
+Javascript C tabanlı bir programlama dilidir.
+HTML sayfalarının içine program yazıp bu sayfaları dinamik hale getirmek için kullanılır.
+Kodlar ziyaretçinin tarayıcısında çalıştığı için oldukça hızlıdır.
+Javascript, HTML5 gibi, tüm modern tarayıcılar tarafından desteklenir.
+
+
+	Javascript İle Neler Yapılır?
+
+HTML sayfalarının biçimlendirilmesi
+HTML sayfalarında animasyon vb. işlemler
+Formlardaki verilerin doğruluk denetimi
+Ziyaretçi bilgisayarında çalışan <<istemci tarafı>> yazılımlar
+Sunucuda çalışan ve ziyaretçinin kullandığı <<sunucu taraflı>> yazılımlar (Nodr.js)
+Mobil uygulama (Meteor, NativeScript)
+Gömülü sistemler
+
+
+	Örnek JS Kodu
+
+<head>
+</head>
+<body>
+        
+    </body>
+    <script>
+        //alert("Merhaba JavaScript!!!");
+        //var x=1;
+        //var y=2;
+        var x=1, y=2, toplam=0;
+        toplam=x+y;
+        //alert(toplam);
+        document.write(toplam);
+</script>
+
+
+<body>
+     <h2>First Web Page</h2>
+     <p>First Paragraph</p>
+     
+     <p id="demo"></p>
+     <script>
+        document.getElementById("demo").innerHTML="Merhaba";
+     </script>    
+</body>
+
+
+	Yaygın Javascript Kütüphaneleri (Frameworks)
+* D3.js
+* jQuery
+* jQuery UI
+* Parsley
+* QUnit
+* React
+* Angular
+* Ember.js
+* Anime.js
+* Moment.js
+* Vue.js ...
+
+React, JS dünyasının en yaygın framework’üdür. 
+Reaktif bir yaklaşım kullanır, React’i kullanmak ve ön uç geliştirmede yüksek 
+esnekliğe ulaşmak için çok sayıda ek araç kullanmayı öğrenmeniz gerekir. 
+Örneğin, React ile kullanabileceğiniz kütüphanelerin bazıları: Redux, MobX, Fluxy, 
+Fluxible veya RefluxJS. React ayrıca jQuery AJAX, fetch API, Superagent ve Axios 
+ile de kullanılabilir.
+
+	Angular: Web üzerinde uygulama oluşturmayı kolaylaştıran, yazı tabanlı, 
+açık kaynaklı bir JS framework’üdür. AngularJS kullanılarak geliştirilen bazı popüler 
+web siteleri: Netflix, Paypal, Upwork ve Youtube’dir.
+
+	jQuery:  Üzerine diğer .JS framework’lerin oluşturulduğu bir JavaScript 
+kütüphanesidir. jQuery Mobile, bir mobil uygulama alternatifidir.
+
+	Backbone.js: Ruby on Rails ile uyumlu MV tarzı bir framework’tür.
+
+	MeteorJS: Mobil uygulamalar için Angular ve Node.js kombinasyonu bir 
+framework’tür.
+
+	ExpressJS: Node.js platformunda çalışan bir arka uç JavaScript framework’üdür.
+
+	React: Facebook tarafından oluşturulan React, kısa bir süre içinde popülerlik 
+kazanan bir framework’tür. Gelen trafiği yüksek web sayfalarının dinamik kullanıcı 
+arayüzünü geliştirmek ve çalıştırmak için kullanılır. Sanal bir DOM kullanımını sağlar 
+ve bu nedenle herhangi bir uygulama ile entegrasyonu daha basittir.
+
+	Vue: 2016 yılında geliştirilmiş olan Vue, çeşitli özellikleriyle değerini 
+kanıtlayan bir framework’tür. İkili entegrasyon modu, üst düzey SPA ve Tek Sayfa 
+Uygulaması en çekici özelliklerdendir. Çapraz platform geliştirmek için çok 
+güvenilirdir.
+
+
+
+	Bundan Sonra Neler Öğrenmeliyim?
+
+Görsel ögeleri tasarlamak için görüntü işleme yazılımı öğrenin.
+->Photoshop
+->GIMP
+->Fireworks
+SEO konusunu daha ayrıntılı inceleyin.
+Çok yaygın kullanılan Bootstrap (CSS3 kütüphanesi) öğrenin.
+Etkileşimli web sayfaları tasarlamak için Javascript öğrenin.
+Çok yaygın kullanılan jQuery (JS kütüphanesi) öğrenin.
+Dinamik web sayfaları oluşturmak için PHP ve ASP gibi teknolojileri öğrenin.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
